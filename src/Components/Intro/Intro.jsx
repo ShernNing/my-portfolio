@@ -104,7 +104,7 @@ function Intro() {
           <div className="blur"/>
           <div className="blur2"/>
 
-        <Link spy={true} to='Services' smooth={true} activeClass='activeClass' className='triangle'>
+        <Link spy={true} to='Services' smooth={true} activeClass='activeClass' className='triangle triangleIntro'>
           <Triangle/>
         </Link>
       </div>
