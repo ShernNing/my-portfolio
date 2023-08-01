@@ -1,0 +1,53 @@
+:root
+{
+  --blue: #039BE5;
+    --lblue : #57c3f5;
+    --black : #242D49;
+    --grey : #363636;
+    --blueCard : #DDF8FE;
+    --purple: rgb(238 210 255);
+    --pink: #E91E63;
+    --boxShadow : 0px 19px 60px rgb(0 0 0 / 8%);
+    --orangeCard: rgba(252, 166, 31, 0.45);
+    --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+    font-family: 'Courier New', Courier, monospace  ;
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+}
+
+.App{
+    padding: 0.5em 15em;
+    overflow: hidden;
+    color: var(--black);   
+}
+
+.button{
+  border-radius: 2rem;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  padding: 0.8em 1.2em;
+  background: linear-gradient(340deg, #039BE5 30%, #57c3f5 99%);
+  box-shadow: 0px 10px 24px 3px #039BE5;
+  transition: 0.7s;
+}
+
+.button:hover {
+  background: white;
+  cursor: pointer;
+  color: #039BE5;
+}
+
+.ScrollToTop {
+  background: transparent !important;
+  border-radius: 50% !important;
+}
+
+.ScrollToTop:hover {
+  transform: scale(1.05);
+}
+  
+@media screen and (max-width: 480px){
+  .App{
+    padding: 0.5em 1em;
+  }
+}

@@ -1,0 +1,49 @@
+#heading {
+  display: grid;
+  place-content: center;
+  text-align: center;
+  padding: 30rem 0;
+}
+
+#heading h1 {
+  font-weight: normal;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: min-content;
+  font-size: 3.5rem;
+  animation: typing1 3s steps(28, end) forwards, blink1 0.7s infinite alternate;
+  letter-spacing: .05rem;
+}
+
+@keyframes typing1 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes blink1 {
+  0% {
+    border-right: 3px solid transparent;
+  }
+
+  100% {
+    border-right: 3px solid var(--black);
+  }
+}
+
+#heading h2 {
+  font-weight: normal;
+  font-size: 2.5rem;
+  animation: fadeIn 1.2s ease-in 3s forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 1;
+  }
+}

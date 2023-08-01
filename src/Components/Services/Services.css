@@ -1,0 +1,89 @@
+.services {
+  display: flex;
+  padding: 5em 0;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex: 1;
+}
+
+.left > :nth-child(1) {
+  font-size: 3rem;
+  font-weight: normal ;
+  margin: 0;
+  z-index: 1;
+}
+
+.left > :nth-child(2) {
+  color: #039BE5;
+  font-size: 3.5rem;
+  font-weight: normal ;
+  margin-top: 1rem;
+  z-index: 1;
+}
+
+.left > :nth-child(3) {
+  color: var(--grey);
+  max-width: 60ch;
+  word-spacing: 0.25em;
+  font-size: 1.5rem !important;
+  font-weight: normal ;
+  z-index: 1;
+}
+
+.right {
+  position: relative;
+  flex: 1;
+}
+
+.card1, .card2, .card3 {
+  position: absolute;
+  z-index: 1;
+}
+
+.s-blur3 {
+  background: var(--pink);
+  position: absolute;
+  width: 32rem;
+  height: 24rem;
+  right: -10rem;
+  top: 45rem;
+  border-radius: 50%;
+  filter: blur(300px);
+  transform: scale(1.6);
+}
+
+.s-blur4 {
+  background: var(--blue);
+  position: absolute;
+  width: 32rem;
+  height: 24rem;
+  left: -40rem;
+  top: 5rem;
+  border-radius: 50%;
+  filter: blur(250px);
+  transform: scale(1.8);
+}
+
+@media screen and (max-width: 480px) {
+  .services {
+    margin-top: 0;
+    flex-direction: column;
+    gap: 5rem;
+    height: 66rem;
+    padding: 0;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 17rem;
+  }
+
+  .cards > * {
+    position: static;
+  }
+}
