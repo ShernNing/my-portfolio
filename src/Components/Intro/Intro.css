@@ -1,6 +1,6 @@
 .intro {
   display: flex;
-  padding: 15em 0 20rem 0;
+  padding: 20em 0 20rem 0;
   position: relative;
 }
 
@@ -13,6 +13,7 @@
 .i-name {
   display: flex;
   flex-direction: column;
+  padding: 1rem;
 }
 
 .i-name > :nth-child(1) {
@@ -218,4 +219,62 @@ svg:hover #blue2{
 
 .triangle:hover {
   opacity: 1;
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .intro {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 25rem !important;
+  }
+
+  .i-right {
+    margin: 4rem 0 4rem 0;
+    left: -2rem;
+  }
+
+  .i-right > * {
+    font-size: 1rem;
+  }
+
+  .floating-div  {
+    width: max-content;
+    margin: 0 auto;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .i-right {
+    transform: scale(0.8);
+    left: -1rem;
+  }
+
+  .i-name > :nth-child(1),   .i-name > :nth-child(2) {
+    font-size: 2.9rem;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .intro {
+    padding-top: 10rem;
+  }
+
+  .i-name > :nth-child(1),   .i-name > :nth-child(2) {
+    font-size: 2.8rem;
+  }
+
+  .i-right {
+    transform: scale(0.65);
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .container {
+    max-width: 100%;
+  }
 }

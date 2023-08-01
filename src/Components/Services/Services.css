@@ -1,6 +1,6 @@
 .services {
   display: flex;
-  padding: 5em 0;
+  padding: 10em 0;
   position: relative;
 }
 
@@ -14,7 +14,7 @@
 .left > :nth-child(1) {
   font-size: 3rem;
   font-weight: normal ;
-  margin: 0;
+  margin: 0 auto;
   z-index: 1;
 }
 
@@ -22,7 +22,7 @@
   color: #039BE5;
   font-size: 3.5rem;
   font-weight: normal ;
-  margin-top: 1rem;
+  margin-top: 1rem auto;
   z-index: 1;
 }
 
@@ -30,7 +30,7 @@
   color: var(--grey);
   max-width: 60ch;
   word-spacing: 0.25em;
-  font-size: 1.5rem !important;
+  font-size: 1.5rem ;
   font-weight: normal ;
   z-index: 1;
 }
@@ -43,6 +43,69 @@
 .card1, .card2, .card3 {
   position: absolute;
   z-index: 1;
+}
+
+@keyframes motion1 {
+  0% {
+    top: 0rem;
+    left: 15rem;
+  }
+
+  80% {
+    top: 8rem;
+    left: 15rem;
+  }
+
+  100% {
+    top: 7rem;
+    left: 15rem;
+  }
+}
+
+.card1 {
+  animation: motion1 2s ease both ;
+}
+
+@keyframes motion2 {
+  0% {
+    top: 20rem;
+    left: 38rem;
+  }
+
+  80% {
+    top: 20rem;
+    left: 31rem;
+  }
+
+  100% {
+    top: 20rem;
+    left: 32rem;
+  }
+}
+
+.card2 {
+  animation: motion2 2s ease both ;
+}
+
+@keyframes motion3 {
+  0% {
+    top: 29rem;
+    left: 2rem;
+  }
+
+  80% {
+    top: 29rem;
+    left: 12rem;
+  }
+
+  100% {
+    top: 29rem;
+    left: 10rem;
+  }
+}
+
+.card3 {
+  animation: motion3 2s ease both ;
 }
 
 .s-blur3 {
@@ -69,9 +132,9 @@
   transform: scale(1.8);
 }
 
-@media screen and (max-width: 480px) {
+/* @media screen and (max-width: 480px) {
   .services {
-    margin-top: 0;
+    margin-top: 0 auto;
     flex-direction: column;
     gap: 5rem;
     height: 66rem;
@@ -86,5 +149,447 @@
 
   .cards > * {
     position: static;
+  }
+} */
+
+/* 2xl */
+@media (max-width: 1536px) {
+  @keyframes motion1 {
+    0% {
+      top: -10rem;
+      left: 2rem;
+    }
+  
+    80% {
+      top: 0rem;
+      left: 16rem;
+    }
+  
+    100% {
+      top: 0rem;
+      left: 15rem;
+    }
+  }
+  
+  .card1 {
+    animation: motion1 2s ease both ;
+  }
+  
+  @keyframes motion2 {
+    0% {
+      top: 20rem;
+      left: 25rem;
+    }
+  
+    80% {
+      top: 20rem;
+      left: 14rem;
+    }
+  
+    100% {
+      top: 20rem;
+      left: 15rem;
+    }
+  }
+  
+  .card2 {
+    animation: motion2 2s ease both ;
+  }
+  
+  @keyframes motion3 {
+    0% {
+      top: 50rem;
+      left: 2rem;
+    }
+  
+    80% {
+      top: 39rem;
+      left: 14rem;
+    }
+  
+    100% {
+      top: 40rem;
+      left: 15rem;
+    }
+  }
+  
+  .card3 {
+    animation: motion3 2s ease both ;
+  }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  @keyframes motion1 {
+    0% {
+      top: -10rem;
+      left: 12rem;
+    }
+  
+    80% {
+      top: 2rem;
+      left: 12rem;
+    }
+  
+    100% {
+      top: 0rem;
+      left: 12rem;
+    }
+  }
+  
+  .card1 {
+    animation: motion1 2s ease both ;
+  }
+  
+  @keyframes motion2 {
+    0% {
+      top: 20rem;
+      left: 4rem;
+    }
+  
+    80% {
+      top: 20rem;
+      left: 13rem;
+    }
+  
+    100% {
+      top: 20rem;
+      left: 12rem;
+    }
+  }
+  
+  .card2 {
+    animation: motion2 2s ease both ;
+  }
+  
+  @keyframes motion3 {
+    0% {
+      top: 50rem;
+      left: 12rem;
+    }
+  
+    80% {
+      top: 39rem;
+      left: 12rem;
+    }
+  
+    100% {
+      top: 40rem;
+      left: 12rem;
+    }
+  }
+  
+  .card3 {
+    animation: motion3 2s ease both ;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .services {
+    margin-top: 0 auto;
+    flex-direction: column;
+    padding: 6rem 0 25rem 0;
+  }
+
+  .left > :nth-child(1), .left > :nth-child(2) {
+    font-size: 2.5rem;
+  }
+
+  .aboutMe {
+    margin: 1.2rem ;
+    font-size: 1.3rem !important;
+  }
+
+  @keyframes motion1 {
+    0% {
+      top: 0rem;
+      left: 0rem;
+    }
+  
+    80% {
+      top: 0rem;
+      left: 5rem;
+    }
+  
+    100% {
+      top: 0rem;
+      left: 4rem;
+    }
+  }
+  
+  .card1 {
+    animation: motion1 2s ease both ;
+  }
+  
+  @keyframes motion2 {
+    0% {
+      top: 5rem;
+      left: 17rem;
+    }
+  
+    80% {
+      top: -1rem;
+      left: 17rem;
+    }
+  
+    100% {
+      top: 0rem;
+      left: 17rem;
+    }
+  }
+  
+  .card2 {
+    animation: motion2 2s ease both ;
+  }
+  
+  @keyframes motion3 {
+    0% {
+      top: 0rem;
+      left: 33rem;
+    }
+  
+    80% {
+      top: 0rem;
+      left: 29rem;
+    }
+  
+    100% {
+      top: 0rem;
+      left: 30rem;
+    }
+  }
+  
+  .card3 {
+    animation: motion3 2s ease both ;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  @keyframes motion1 {
+    0% {
+      top: 0rem;
+      left: -2rem;
+    }
+  
+    80% {
+      top: 0rem;
+      left: 2rem;
+    }
+  
+    100% {
+      top: 0rem;
+      left: 1rem;
+    }
+  }
+  
+  .card1 {
+    animation: motion1 2s ease both ;
+  }
+  
+  @keyframes motion2 {
+    0% {
+      top: 5rem;
+      left: 13rem;
+    }
+  
+    80% {
+      top: -1rem;
+      left: 13rem;
+    }
+  
+    100% {
+      top: 0rem;
+      left: 13rem;
+    }
+  }
+  
+  .card2 {
+    animation: motion2 2s ease both ;
+  }
+  
+  @keyframes motion3 {
+    0% {
+      top: 0rem;
+      left: 28rem;
+    }
+  
+    80% {
+      top: 0rem;
+      left: 24rem;
+    }
+  
+    100% {
+      top: 0rem;
+      left: 25rem;
+    }
+  }
+  
+  .card3 {
+    animation: motion3 2s ease both ;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .services {
+    margin-top: 0 auto;
+    flex-direction: column;
+    padding: 6rem 0 25rem 0;
+  }
+
+  .left > :nth-child(1), .left > :nth-child(2) {
+    font-size: 2.5rem;
+  }
+
+  .aboutMe {
+    margin: 1.2rem ;
+    font-size: 1.3rem !important;
+  }
+
+  @keyframes motion1 {
+    0% {
+      top: 10rem;
+      left: -1.5rem;
+    }
+  
+    80% {
+      top: -1rem;
+      left: -1.5rem;
+    }
+  
+    100% {
+      top: 0rem;
+      left: -1.5rem;
+    }
+  }
+  
+  .card1 {
+    animation: motion1 2s ease both ;
+  }
+  
+  @keyframes motion2 {
+    0% {
+      top: -1rem;
+      left: 8rem;
+    }
+  
+    80% {
+      top: 5rem;
+      left: 8rem;
+    }
+  
+    100% {
+      top: 0rem;
+      left: 8rem;
+    }
+  }
+  
+  .card2 {
+    animation: motion2 2s ease both ;
+  }
+  
+  @keyframes motion3 {
+    0% {
+      top: 10rem;
+      left: 17.5rem;
+    }
+  
+    80% {
+      top: -1rem;
+      left: 17.5rem;
+    }
+  
+    100% {
+      top: 0rem;
+      left: 17.5rem;
+    }
+  }
+  
+  .card3 {
+    animation: motion3 2s ease both ;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  
+  .services {
+    margin-top: 0 auto;
+    flex-direction: column;
+    padding: 6rem 0 25rem 0;
+  }
+
+  .left > :nth-child(1), .left > :nth-child(2) {
+    font-size: 2.5rem;
+  }
+
+  .aboutMe {
+    margin: 1.2rem ;
+    font-size: 1.3rem !important;
+  }
+
+  @keyframes motion1 {
+    0% {
+      top: 10rem;
+      left: -2rem;
+    }
+  
+    80% {
+      top: -1rem;
+      left: -2rem;
+    }
+  
+    100% {
+      top: 0rem;
+      left: -2rem;
+    }
+  }
+  
+  .card1 {
+    animation: motion1 2s ease both ;
+  }
+  
+  @keyframes motion2 {
+    0% {
+      top: -1rem;
+      left: 7rem;
+    }
+  
+    80% {
+      top: 5rem;
+      left: 7rem;
+    }
+  
+    100% {
+      top: 0rem;
+      left: 7rem;
+    }
+  }
+  
+  .card2 {
+    animation: motion2 2s ease both ;
+  }
+  
+  @keyframes motion3 {
+    0% {
+      top: 10rem;
+      left: 16rem;
+    }
+  
+    80% {
+      top: -1rem;
+      left: 16rem;
+    }
+  
+    100% {
+      top: 0rem;
+      left: 16rem;
+    }
+  }
+  
+  .card3 {
+    animation: motion3 2s ease both ;
   }
 }

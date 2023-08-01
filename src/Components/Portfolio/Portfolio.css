@@ -25,6 +25,8 @@
 
 .portfolio .swiper {
   overflow: visible !important;
+  display: flex;
+  gap: 4rem;
 }
 
 .portfolio-slider {
@@ -67,4 +69,75 @@
   color: var(--grey);
   width: max-content;
   font-size: 1.5rem;
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .portfolio .swiper {
+    flex-direction: column;
+  }
+  .sliderImg:hover {
+    transform: scale(1);
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .portfolio img {
+    height: 14rem;
+  }
+
+  .portfolio span:nth-of-type(1) {
+    font-size: 2.8rem;
+  }
+
+  .portfolio span:nth-of-type(2) {
+    font-size: 3rem;
+  }
+
+  .desc > h3{
+    font-size: 1.8rem;
+  }
+
+  .desc > h4{
+    font-size: 1.5rem;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .portfolio span:nth-of-type(1) {
+    font-size: 2.6rem;
+  }
+
+  .portfolio span:nth-of-type(2) {
+    font-size: 2.6rem;
+  }
+
+  .desc > h3{
+    font-size: 1.7rem;
+  }
+
+  .desc > h4{
+    font-size: 1.4rem;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .portfolio span:nth-of-type(1) {
+    font-size: 2.2rem;
+  }
+
+  .portfolio span:nth-of-type(2) {
+    font-size: 2.2rem;
+  }
+
+  .desc > h3{
+    font-size: 1.6rem;
+  }
+
+  .desc > h4{
+    font-size: 1.3rem;
+  }
 }

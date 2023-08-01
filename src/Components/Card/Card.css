@@ -36,7 +36,7 @@
   transform: scale(0.8);
 }
 
-.c-button {
+/* .c-button {
   background: #ffffff;
   box-shadow: 0 19px 60px rgba(0, 0, 0, 0.08);
   border-radius: 7px;
@@ -49,10 +49,30 @@
 .c-button:hover {
   background: var(--blue);
   color: white;
+} */
+
+/* 2xl */
+@media (max-width: 1536px) {
+  .card {
+    transform: scale(0.9);
+  }
+}
+/* lg */
+@media (max-width: 1024px) {
+  .card {
+    transform: scale(0.7);
+  }
+}
+/* sm */
+@media (max-width: 640px) {
+  .card {
+    transform: scale(0.6);
+  }
 }
 
-@media screen and (max-width: 480px) {
-  .right {
-    width: auto;
+/* xs */
+@media (max-width: 475px) {
+  .card {
+    transform: scale(0.5);
   }
 }

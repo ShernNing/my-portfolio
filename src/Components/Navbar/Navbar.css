@@ -3,6 +3,7 @@
   display: flex;
   justify-content: space-between;
   font-size: 1.4rem;
+  padding: 0 5rem;
 }
 
 li:hover {
@@ -63,11 +64,49 @@ li:hover {
   }
 }
 
-@media screen and (max-width: 480px) {
-  .n-list {
-    display: none;
+/* lg */
+@media (max-width: 1024px) {
+  .n-wrapper {
+    font-size: 1.2rem;
   }
-  .n-button {
-    display: none;
+
+  .n-name {
+    font-size: 1.2rem;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .n-wrapper {
+    flex-direction: column;
+    padding: 1rem 0;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .n-wrapper {
+    font-size: 1.1rem;
+  }
+
+  .n-name {
+    font-size: 1.1rem;
+  }
+
+  .n-right {
+    margin-left: -2.2rem ;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .n-wrapper {
+    font-size: 1rem;
+  }
+
+  .n-name {
+    font-size: 1rem;
   }
 }

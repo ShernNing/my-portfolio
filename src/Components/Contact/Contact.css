@@ -72,7 +72,7 @@ form {
 }
 
 textarea{
-    height: max(8rem)!important;
+    height: 7rem !important;
 }
 
 .s-button {
@@ -92,10 +92,10 @@ textarea{
   height: 26rem;
   border-radius: 50%;
   background: var(--blue);
-  filter: blur(150px);
+  filter: blur(200px);
   z-index: -9;
-  top: 10rem;
-  transform: scale(1.4);
+  top: 18rem;
+  transform: scale(1.6);
 }
 
 .blur6 {
@@ -104,21 +104,86 @@ textarea{
   height: 24rem;
   border-radius: 50%;
   background: var(--pink);
-  filter: blur(250px);
+  filter: blur(230px);
   z-index: -8;
-  top: 15rem;
+  top: 23rem;
   left: 13rem;
-  transform: scale(1.2);
+  transform: scale(1.4);
 }
 
-@media screen and (max-width: 480px) {
+
+/* lg */
+@media (max-width: 1024px) {
   .contact-form{
-      padding: 0;
-      flex-direction: column;
-      gap: 5rem;
-      height: 40rem;
+    padding: 12rem 0;
+    flex-direction: column;
+    gap: 5rem;
+    height: 40rem;
   }
-  .c-right .user{
-      width: 16rem;
+
+  .c-email {
+    font-size: 2.8rem;
+    color: white !important;
   }
-}  
+
+  .f-icons > a, .left span:nth-last-of-type(1)  {
+    color: white ;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .c-email {
+    font-size: 2.7rem;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .contact-form {
+    padding: 5rem 0 8rem 0;
+  }
+
+  .c-email {
+    font-size: 2.1rem;
+  }
+
+  .contact1, .contact2 {
+    font-size: 2.3rem !important;
+  }
+
+  .user {
+    font-size: 1.1rem !important;
+    width: max(18rem);
+    height: 1.8rem;
+  }
+
+  .textarea {
+    height: 4rem ;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .contact-form {
+    padding: 5rem 0 5rem 0;
+  }
+
+  .c-email {
+    font-size: 1.8rem;
+  }
+
+  .contact1, .contact2 {
+    font-size: 2rem !important;
+  }
+
+  .user {
+    font-size: 1rem !important;
+    width: max(15rem);
+    height: 1.5rem;
+  }
+
+  .textarea {
+    height: 4rem !important;
+  }
+}

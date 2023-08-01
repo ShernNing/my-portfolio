@@ -16,33 +16,53 @@ function Portfolio() {
   const darkMode = theme.state.darkMode;
 
   return (
-    <div className="portfolio" id='Portfolio'>
-      <span style={{color: darkMode? 'white' : ''}}>Recent Projects</span>
-      <span>Portfolio</span>
+    <div className="container">
+      <div className="portfolio" id='Portfolio'>
+        <span style={{color: darkMode? 'white' : ''}}>Recent Projects</span>
+        <span>Portfolio</span>
 
-      <Swiper spaceBetween={550} slidesPerView={3} grabCursor={true} className='portfolio-slider'>
-        <SwiperSlide>
-          <a href="https://yourtube.online/" target="_blank">
-            <img src={yourtube} alt="" className='sliderImg'/>
-          </a>
-          <a href="https://yourtube.online/" target="_blank" className='desc'>
-            <h3 style={{color: darkMode? 'white' : ''}}>Youtube</h3>
-            <h4 style={{color: darkMode? 'white' : ''}}>React, Javascript, CSS, HTML</h4>
-          </a>
-        </SwiperSlide>
-        <SwiperSlide>
-          <a href="" target="_blank">
-            <img src={ecommerce} alt="" className='sliderImg'/>
-          </a>
-          <a href="" className='desc' >
-            <h3 style={{color: darkMode? 'white' : ''}}>E-Commerce Store</h3>
-            <h4 style={{color: darkMode? 'white' : ''}}>React, Javascript, CSS, HTML</h4>
-          </a>
-        </SwiperSlide>
-      </Swiper>
-      <Link spy={true} to='Contact' smooth={true} activeClass='activeClass' className='triangle' >
-        <Triangle/>
-      </Link>
+        <Swiper spaceBetween={550} slidesPerView={3} grabCursor={true} className='portfolio-slider'>
+          <div>
+            <a href="https://yourtube.online/" target="_blank">
+              <img src={yourtube} alt="" className='sliderImg'/>
+            </a>
+            <a href="https://yourtube.online/" target="_blank" className='desc'>
+              <h3 style={{color: darkMode? 'white' : ''}}>Youtube</h3>
+              <h4 style={{color: darkMode? 'white' : ''}}>React, Javascript, CSS, HTML</h4>
+            </a>
+          </div>
+          {/* <SwiperSlide>
+            <a href="https://yourtube.online/" target="_blank">
+              <img src={yourtube} alt="" className='sliderImg'/>
+            </a>
+            <a href="https://yourtube.online/" target="_blank" className='desc'>
+              <h3 style={{color: darkMode? 'white' : ''}}>Youtube</h3>
+              <h4 style={{color: darkMode? 'white' : ''}}>React, Javascript, CSS, HTML</h4>
+            </a>
+          </SwiperSlide> */}
+          <div>
+            <a href="" target="_blank">
+              <img src={ecommerce} alt="" className='sliderImg'/>
+            </a>
+            <a href="" className='desc' >
+              <h3 style={{color: darkMode? 'white' : ''}}>E-Commerce Store</h3>
+              <h4 style={{color: darkMode? 'white' : ''}}>React, Javascript, CSS, HTML</h4>
+            </a>
+          </div>
+          {/* <SwiperSlide>
+            <a href="" target="_blank">
+              <img src={ecommerce} alt="" className='sliderImg'/>
+            </a>
+            <a href="" className='desc' >
+              <h3 style={{color: darkMode? 'white' : ''}}>E-Commerce Store</h3>
+              <h4 style={{color: darkMode? 'white' : ''}}>React, Javascript, CSS, HTML</h4>
+            </a>
+          </SwiperSlide> */}
+        </Swiper>
+        <Link spy={true} to='Contact' smooth={true} activeClass='activeClass' className='triangle' >
+          <Triangle/>
+        </Link>
+      </div>
     </div>
   )
 }

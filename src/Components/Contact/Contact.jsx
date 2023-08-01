@@ -28,34 +28,36 @@ function Contact() {
   };
 
   return (
-    <div className="contact-form" id='Contact'>
-      <div className="w-left">
-        <div className="left">
-          <span style={{color: darkMode? 'white' : ''}}>GET IN TOUCH!</span>
-          <span>Contact me</span>
-          <div className="f-icons">
-            <a href="https://github.com/ShernNing" target="_blank">
-              <Github/>
-            </a>
-            <a href="https://www.linkedin.com/in/shern-ning-tan-942527106/" target="_blank">
-              <Linkedin/>
-            </a>
+    <div className="container">
+      <div className="contact-form" id='Contact'>
+        <div className="w-left">
+          <div className="left">
+            <span style={{color: darkMode? 'white' : ''}} className='contact1'>GET IN TOUCH!</span>
+            <span className='contact2'>Contact me</span>
+            <div className="f-icons">
+              <a href="https://github.com/ShernNing" target="_blank">
+                <Github/>
+              </a>
+              <a href="https://www.linkedin.com/in/shern-ning-tan-942527106/" target="_blank">
+                <Linkedin/>
+              </a>
+            </div>
+            <a href="mailto: sherningtan@gmail.com" className='c-email'>sherningtan@gmail.com</a>
           </div>
-          <a href="mailto: sherningtan@gmail.com" className='c-email'>sherningtan@gmail.com</a>
         </div>
-      </div>
 
-      <div className="c-right">
-        <form action="" ref={form} onSubmit={sendEmail}>
-          <input type="text" name='user_name' className='user' placeholder='Name' />
-          <input type="email" name='user_email' className='user' placeholder='Email' />
-          <textarea name="message" className='user' placeholder='Message'/>
-          <input type="submit" value="Send" className='button s-button' />
-          <span className='sentToast' style={{color: darkMode? 'white' : ''}}>{sent && "Thank you for your email!"}
-          </span>
-        </form>
-        <div className="blur5"/>
-        <div className="blur6"/>
+        <div className="c-right">
+          <form action="" ref={form} onSubmit={sendEmail}>
+            <input type="text" name='user_name' className='user' placeholder='Name' />
+            <input type="email" name='user_email' className='user' placeholder='Email' />
+            <textarea name="message" className='user' placeholder='Message'/>
+            <input type="submit" value="Send" className='button s-button' />
+            <span className='sentToast' style={{color: darkMode? 'white' : ''}}>{sent && "Thank you for your email!"}
+            </span>
+          </form>
+          <div className="blur5"/>
+          <div className="blur6"/>
+        </div>
       </div>
     </div>
   )

@@ -15,7 +15,6 @@
 }
 
 .App{
-    padding: 0.5em 15em;
     overflow: hidden;
     color: var(--black);   
 }
@@ -46,8 +45,62 @@
   transform: scale(1.05);
 }
   
-@media screen and (max-width: 480px){
-  .App{
-    padding: 0.5em 1em;
+.container {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 2xl */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .button {
+    padding: 0.7em 0.8em;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+
+  .button {
+    padding: 0.6em 0.7em;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+
+  .button {
+    padding: 0.5em 0.6em;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .container {
+    max-width: 100%;
   }
 }
