@@ -132,26 +132,6 @@
   transform: scale(1.8);
 }
 
-/* @media screen and (max-width: 480px) {
-  .services {
-    margin-top: 0 auto;
-    flex-direction: column;
-    gap: 5rem;
-    height: 66rem;
-    padding: 0;
-  }
-
-  .cards {
-    display: flex;
-    flex-direction: column;
-    gap: 17rem;
-  }
-
-  .cards > * {
-    position: static;
-  }
-} */
-
 /* 2xl */
 @media (max-width: 1536px) {
   @keyframes motion1 {
@@ -522,28 +502,28 @@
   }
 
   .left > :nth-child(1), .left > :nth-child(2) {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
   .aboutMe {
     margin: 1.2rem ;
-    font-size: 1.3rem !important;
+    font-size: 1rem !important;
   }
 
   @keyframes motion1 {
     0% {
       top: 10rem;
-      left: -2rem;
+      left: -2.5rem;
     }
   
     80% {
       top: -1rem;
-      left: -2rem;
+      left: -2.5rem;
     }
   
     100% {
       top: 0rem;
-      left: -2rem;
+      left: -2.5rem;
     }
   }
   
@@ -554,17 +534,17 @@
   @keyframes motion2 {
     0% {
       top: -1rem;
-      left: 7rem;
+      left: 5.5rem;
     }
   
     80% {
       top: 5rem;
-      left: 7rem;
+      left: 5.5rem;
     }
   
     100% {
       top: 0rem;
-      left: 7rem;
+      left: 5.5rem;
     }
   }
   
@@ -575,17 +555,17 @@
   @keyframes motion3 {
     0% {
       top: 10rem;
-      left: 16rem;
+      left: 13.5rem;
     }
   
     80% {
       top: -1rem;
-      left: 16rem;
+      left: 13.5rem;
     }
   
     100% {
       top: 0rem;
-      left: 16rem;
+      left: 13.5rem;
     }
   }
   

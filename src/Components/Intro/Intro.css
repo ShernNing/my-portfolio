@@ -277,4 +277,26 @@ svg:hover #blue2{
   .container {
     max-width: 100%;
   }
+
+  .blur {
+    top: 20rem;
+    right: 0rem;
+  }
+  
+  .blur2 {
+    top: 45rem;
+    left: 0rem;
+  }
+
+  .i-right {
+    transform: scale(0.5);
+  }
+
+  .i-name > :nth-child(1),   .i-name > :nth-child(2) {
+    font-size: 2.3rem;
+  }
+
+  .i-name > :nth-child(3) {
+    font-size: 1.2rem;
+  }
 }

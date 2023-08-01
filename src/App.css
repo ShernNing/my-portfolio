@@ -73,6 +73,7 @@
 
   .button {
     padding: 0.7em 0.8em;
+    margin-left: 0.5rem;
   }
 }
 
@@ -81,20 +82,12 @@
   .container {
     max-width: 640px;
   }
-
-  .button {
-    padding: 0.6em 0.7em;
-  }
 }
 
 /* sm */
 @media (max-width: 640px) {
   .container {
     max-width: 475px;
-  }
-
-  .button {
-    padding: 0.5em 0.6em;
   }
 }
 

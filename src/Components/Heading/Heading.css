@@ -134,15 +134,15 @@
   }
 
   .h-name {
-    font-size: 1.4rem !important;
+    font-size: 1.2rem !important;
     margin: 0 auto !important;
   }
 
   .h-welcome {
-    font-size: 1.4rem !important;
+    font-size: 1.2rem !important;
   }
 
   .triangleNext {
-    transform: scale(0.6);
+    transform: scale(0.45);
   }
 }

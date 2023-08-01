@@ -98,15 +98,25 @@ li:hover {
   .n-right {
     margin-left: -2.2rem ;
   }
+
+  .n-button {
+    margin-left: -1.8rem !important;
+    font-size: 0.9rem !important;
+  }
 }
 
 /* xs */
 @media (max-width: 475px) {
   .n-wrapper {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
-  .n-name {
+  /* .n-name {
     font-size: 1rem;
+  } */
+
+  .n-button {
+    /* margin-left: -1.8rem !important; */
+    font-size: 0.7rem !important;
   }
 }
