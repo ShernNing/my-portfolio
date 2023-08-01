@@ -3,6 +3,7 @@
   place-content: center;
   text-align: center;
   padding: 30rem 0;
+  position: relative;
 }
 
 #heading h1 {
@@ -46,4 +47,12 @@
   100% {
     opacity: 1;
   }
+}
+
+.trianglesNext {
+  transform: rotate(90deg) scale(0.4);
+  height: auto;
+  opacity: 1;
+  /* animation: fadeIn 1s forwards 4s; */
+  animation: name duration timing-function delay iteration-count direction fill-mode;
 }

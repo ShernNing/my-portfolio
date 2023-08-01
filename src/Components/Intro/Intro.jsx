@@ -11,6 +11,8 @@ import { themeContext } from '../../Context'
 import { motion } from 'framer-motion'
 import Linkedin from '@iconscout/react-unicons/icons/uil-linkedin'
 import Github from '@iconscout/react-unicons/icons/uil-github'
+import { Link } from 'react-scroll'
+import Triangle from '../Triangle/Triangle'
 
 function Intro() {
   const theme = useContext(themeContext);
@@ -98,6 +100,10 @@ function Intro() {
         {/* blur background */}
         <div className="blur"/>
         <div className="blur2"/>
+
+      {/* <Link spy={true} to='Services' smooth={true} activeClass='activeClass' className='triangleIntro'>
+        <Triangle/>
+      </Link> */}
     </div>
   )
 }

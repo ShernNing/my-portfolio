@@ -1,6 +1,7 @@
 .intro {
   display: flex;
   padding: 15em 0 20rem 0;
+  /* border: 2px solid red; */
 }
 
 .i-left {
@@ -8,6 +9,7 @@
   position: relative;
   flex: 1;
   z-index: 1;
+  /* border: 2px solid green; */
 }
 
 .i-name {
@@ -135,6 +137,7 @@ svg:hover #blue2{
 .i-right {
   flex: 1;
   position: relative;
+  /* border: 2px solid orange; */
 }
 
 .i-right > * {
@@ -205,4 +208,8 @@ svg:hover #blue2{
     font-size: 45px;
   }
 
+}
+
+.triangleIntro {
+  /* border: 2px solid pink; */
 }

@@ -15,7 +15,7 @@ function Navbar() {
       <div className="n-right">
         <div className="n-list">
           <ul style={{listStyleType: 'none'}}>
-            <Link spy={true} to='Navbar' smooth={true} activeClass='activeClass' to='Intro' className='bounce1'>
+            <Link spy={true} to='Intro' smooth={true} activeClass='activeClass' className='bounce1'>
               <li>Home</li>
             </Link>
             <Link spy={true} to='Services' smooth={true} activeClass='activeClass' className='bounce1'>
