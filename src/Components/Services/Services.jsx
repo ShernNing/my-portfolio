@@ -6,6 +6,8 @@ import webdevelopment from '../../img/webdevelopment.png'
 import Card from '../Card/Card'
 import { themeContext } from '../../Context'
 import { motion } from 'framer-motion'
+import { Link } from 'react-scroll'
+import Triangle from '../Triangle/Triangle'
 
 function Services() {
   const theme = useContext(themeContext);
@@ -61,6 +63,9 @@ function Services() {
         <div className="blur3 s-blur3"></div>
         <div className="blur4 s-blur4"></div>
       </div>
+      <Link spy={true} to='Portfolio' smooth={true} activeClass='activeClass' className='triangle' >
+        <Triangle/>
+      </Link>
     </div>
   ) 
 }

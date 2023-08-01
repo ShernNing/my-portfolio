@@ -1,0 +1,16 @@
+.trianglesNext {
+  transform: rotate(90deg) scale(0.4);
+  height: auto;
+  opacity: 0;
+  animation: fadeIn 1s forwards 4s;
+}
+
+.trianglesNext:hover {
+  opacity: 1;
+}
+
+@keyframes fadeIn {
+  100% {
+    opacity: 0.5;
+  }
+}

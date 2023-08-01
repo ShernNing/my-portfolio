@@ -49,10 +49,19 @@
   }
 }
 
-.trianglesNext {
-  transform: rotate(90deg) scale(0.4);
+.triangleNext {
+  transform: rotate(0deg) scale(0.7);
   height: auto;
+  opacity: 0;
+  animation: fadeTriangle 1s forwards 4s;
+}
+
+.triangleNext:hover {
   opacity: 1;
-  /* animation: fadeIn 1s forwards 4s; */
-  animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+@keyframes fadeTriangle {
+  100% {
+    opacity: 0.6;
+  }
 }

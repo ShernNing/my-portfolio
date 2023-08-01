@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import './Intro.css'
-import Resume from './Resume.docx'
+import Resume from './Shern Ning Tan CV.pdf'
 import github from '../../img/github.png'
 import linkedin from '../../img/linkedin.png'
 import designer from '../../img/designer.png'
@@ -42,7 +42,7 @@ function Intro() {
             </button>
           </a>
           <div className="i-icons">
-            <div className='triangles'>
+            {/* <div className='triangles'>
               <svg width="200" height="100" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g id="triangles" clip-path="url(#clip0_1_2)">
                 <g id="pink">
@@ -59,7 +59,7 @@ function Intro() {
                 </clipPath>
                 </defs>
               </svg>
-            </div>
+            </div> */}
             <div className="f-icon">
             </div>
               <a href="https://github.com/ShernNing" target="_blank" className='github'>
@@ -101,9 +101,9 @@ function Intro() {
         <div className="blur"/>
         <div className="blur2"/>
 
-      {/* <Link spy={true} to='Services' smooth={true} activeClass='activeClass' className='triangleIntro'>
+      <Link spy={true} to='Services' smooth={true} activeClass='activeClass' className='triangle'>
         <Triangle/>
-      </Link> */}
+      </Link>
     </div>
   )
 }

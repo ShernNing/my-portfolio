@@ -6,6 +6,8 @@ import yourtube from '../../img/yourtube.png'
 import ecommerce from '../../img/ecommerce.png'
 import { useContext } from 'react'
 import { themeContext } from '../../Context'
+import { Link } from 'react-scroll'
+import Triangle from '../Triangle/Triangle'
 
 function Portfolio() {
   
@@ -38,6 +40,9 @@ function Portfolio() {
           </a>
         </SwiperSlide>
       </Swiper>
+      <Link spy={true} to='Contact' smooth={true} activeClass='activeClass' className='triangle' >
+        <Triangle/>
+      </Link>
     </div>
   )
 }
