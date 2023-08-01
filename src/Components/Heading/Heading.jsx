@@ -11,6 +11,8 @@ function Heading() {
       <Link spy={true} to='Intro' smooth={true} activeClass='activeClass' className='triangleNext' >
         <Triangle/>
       </Link>
+      <div className="blur"/>
+      <div className="blur2"/>
     </div>
   )
 }

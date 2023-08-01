@@ -169,6 +169,7 @@ svg:hover #blue2{
   top: 10rem;
   right: 0rem;
   transform: scale(1.4);
+  z-index: -10;
 }
 
 .blur2 {
@@ -179,8 +180,9 @@ svg:hover #blue2{
   background: var(--pink);
   filter: blur(300px);
   top: 25rem;
-  left: 5rem;
+  left: 0rem;
   transform: scale(1.4);
+  z-index: -10;
 }
 
 @media screen and (max-width: 480px) {
