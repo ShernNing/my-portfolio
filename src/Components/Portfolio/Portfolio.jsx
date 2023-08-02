@@ -1,6 +1,6 @@
 import React from 'react'
 import './Portfolio.css'
-import {Swiper, SwiperSlide} from 'swiper/react'
+import {Swiper} from 'swiper/react'
 import 'swiper/css'
 import yourtube from '../../img/yourtube.png'
 import ecommerce from '../../img/ecommerce.png'
