@@ -8,7 +8,7 @@ import { themeContext } from "./Context";
 import { lazy, Suspense, useContext } from "react";
 import ScrollToTop from "react-scroll-to-top";
 import Heading from "./Components/Heading/Heading";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
 const IntroLazy = lazy(() => import('./Components/Intro/Intro'));
 const ServicesLazy = lazy(() => import('./Components/Services/Services'));
@@ -28,14 +28,8 @@ function App() {
         <Heading/>
         <Suspense fallback={<div>Loading...</div>}>
           <IntroLazy/>
-        </Suspense>
-        <Suspense fallback={<div>Loading...</div>}>
           <ServicesLazy/>
-        </Suspense>
-        <Suspense fallback={<div>Loading...</div>}>
           <PortfolioLazy/>
-        </Suspense>
-        <Suspense fallback={<div>Loading...</div>}>
           <ContactLazy/>
         </Suspense>
         <ScrollToTop smooth className="ScrollToTop"/>
