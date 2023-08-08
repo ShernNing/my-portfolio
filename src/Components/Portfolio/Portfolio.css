@@ -109,7 +109,7 @@
   }
 
   .desc > h4{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -123,12 +123,16 @@
     font-size: 2.6rem;
   }
 
+  .portfolio {
+    margin: 0 0.7rem;
+  }
+
   .desc > h3{
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
 
   .desc > h4{
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -143,10 +147,14 @@
   }
 
   .desc > h3{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
 
   .desc > h4{
-    font-size: 1.3rem;
+    font-size: 1.12rem;
+  }
+
+  .sliderImg {
+    transform: scale(0.85);
   }
 }
