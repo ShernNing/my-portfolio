@@ -28,7 +28,7 @@ function Portfolio() {
             </a>
             <a href="https://yourtube.online/" target="_blank" className='desc'>
               <h3 style={{color: darkMode? 'white' : ''}}>Youtube</h3>
-              <h4 style={{color: darkMode? 'white' : ''}}>React, Javascript, CSS, HTML</h4>
+              <h4 style={{color: darkMode? 'white' : ''}}>React, Javascript, CSS, HTML, Git</h4>
             </a>
           </div>
           {/* <SwiperSlide>
@@ -41,10 +41,10 @@ function Portfolio() {
             </a>
           </SwiperSlide> */}
           <div>
-            <a href="" target="_blank">
+            <a href="https://shernning.pro/" target="_blank">
               <img src={ecommerce} alt="" className='sliderImg'/>
             </a>
-            <a href="" className='desc' >
+            <a href="https://shernning.pro/" className='desc' >
               <h3 style={{color: darkMode? 'white' : ''}}>E-Commerce Store</h3>
               <h4 style={{color: darkMode? 'white' : ''}}>React, Javascript, CSS, HTML</h4>
             </a>

@@ -167,7 +167,7 @@ svg:hover #blue2{
   border-radius: 50%;
   background: var(--blue);
   filter: blur(300px);
-  top: 10rem;
+  top: 25rem;
   right: 0rem;
   transform: scale(1.4);
   z-index: -10;
@@ -180,7 +180,7 @@ svg:hover #blue2{
   border-radius: 50%;
   background: var(--pink);
   filter: blur(300px);
-  top: 25rem;
+  top: 10rem;
   left: 0rem;
   transform: scale(1.4);
   z-index: -10;

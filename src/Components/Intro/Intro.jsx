@@ -1,8 +1,6 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import './Intro.css'
 import Resume from './Shern Ning Tan CV.pdf'
-import github from '../../img/github.png'
-import linkedin from '../../img/linkedin.png'
 import designer from '../../img/designer.png'
 import uidesign from '../../img/uidesign.png'
 import coding from "../../img/coding.png";
