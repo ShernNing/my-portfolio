@@ -8,6 +8,7 @@ import { useContext } from 'react'
 import { themeContext } from '../../Context'
 import { Link } from 'react-scroll'
 import Triangle from '../Triangle/Triangle'
+import Github from '@iconscout/react-unicons/icons/uil-github'
 
 function Portfolio() {
   
@@ -30,6 +31,9 @@ function Portfolio() {
               <h3 style={{color: darkMode? 'white' : ''}}>Youtube</h3>
               <h4 style={{color: darkMode? 'white' : ''}}>React, Javascript, CSS, HTML, Git</h4>
             </a>
+            <a href="https://github.com/ShernNing/youtube.git" target="_blank" className='githubPortfolio'>
+              <Github/>
+            </a>
           </div>
           {/* <SwiperSlide>
             <a href="https://yourtube.online/" target="_blank">
@@ -46,7 +50,10 @@ function Portfolio() {
             </a>
             <a href="https://shernning.pro/" className='desc' >
               <h3 style={{color: darkMode? 'white' : ''}}>E-Commerce Store</h3>
-              <h4 style={{color: darkMode? 'white' : ''}}>React, Javascript, CSS, HTML</h4>
+              <h4 style={{color: darkMode? 'white' : ''}}>React, Javascript, CSS, HTML, Git</h4>
+            </a>
+            <a href="https://github.com/ShernNing/ecommerce.git" target="_blank" className='githubPortfolio'>
+              <Github/>
             </a>
           </div>
           {/* <SwiperSlide>

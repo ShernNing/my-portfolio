@@ -71,6 +71,15 @@
   font-size: 1.5rem;
 }
 
+.githubPortfolio {
+  color: black;
+  transform: scale(3 !important);
+}
+
+.githubPortfolio:hover {
+  color: rgba(0, 0, 0, 0.664);
+}
+
 /* xl */
 @media (max-width: 1280px) {
   .portfolio .swiper {
