@@ -16,7 +16,7 @@
   padding: 1rem;
 }
 
-.i-name > :nth-child(1) {
+.introText {
   color: #000;
   font-weight: 400;
   font-size: 3rem;
@@ -46,7 +46,7 @@
   }
 }
 
-.i-name > :nth-child(2) {
+.introName {
   color: #039BE5;
   font-size: 3.5rem;
   font-weight: normal;
@@ -58,7 +58,7 @@
   letter-spacing: .05rem;
 }
 
-.i-name > :nth-child(3) {
+h1 {
   font-weight: 400;
   font-size: 1.5rem;
   color: rgb(30, 30, 30);
@@ -85,13 +85,6 @@
   transform: scale(2);
   color: var(--black);
 }
-
-/* .triangles > svg {
-  max-width: max-content;
-  height: 2.5rem;
-  transform: scale(0.7);
-  margin: 0 -1.1rem 0 -0.7rem;
-} */
 
 #blue1{
   fill: var(--blue);
@@ -160,29 +153,27 @@ svg:hover #blue2{
   animation: bounce 1.2s;
 }
 
-.blur {
-  position: absolute;
-  width: 44rem;
-  height: 36rem;
+.blur3 {
+  position: fixed;
+  width: 45rem;
+  height: 40rem;
   border-radius: 50%;
-  background: var(--blue);
-  filter: blur(300px);
-  top: 25rem;
-  right: 0rem;
-  transform: scale(1.4);
+  background: var(--pink);
+  filter: blur(400px);
+  top: 10rem;
+  right: 65rem;
   z-index: -10;
 }
 
-.blur2 {
-  position: absolute;
-  width: 32rem;
-  height: 24rem;
+.blur4 {
+  position: fixed;
+  width: 45rem;
+  height: 40rem;
   border-radius: 50%;
-  background: var(--pink);
-  filter: blur(300px);
-  top: 10rem;
-  left: 0rem;
-  transform: scale(1.4);
+  background: var(--blue);
+  filter: blur(400px);
+  top: 5rem;
+  right: -10rem;
   z-index: -10;
 }
 
@@ -278,45 +269,56 @@ svg:hover #blue2{
   .i-right {
     transform: scale(0.65);
   }
+
+  .blur3 {
+    position: fixed;
+    width: 24rem !important;
+    height: 18rem !important;
+    border-radius: 50%;
+    background: var(--pink);
+    filter: blur(500px) !important;
+    top: -65rem !important;
+    right: -15rem !important;
+    z-index: -10 !important;
+  }
+  
+  .blur4 {
+    position: fixed;
+    width: 24rem !important;
+    height: 20rem;
+    border-radius: 50%;
+    background: var(--blue);
+    filter: blur(500px) !important;
+    top: -35rem !important;
+    right: -20rem !important;
+    z-index: -10 !important;
+  }
 }
 
 /* xs */
 @media (max-width: 475px) {
-  .container {
-    max-width: 100%;
-  }
-
-  .blur {
-    top: 55rem;
-    right: 0rem;
-  }
-  
-  .blur2 {
-    top: 15rem;
-    left: 0rem;
-  }
 
   .i-right {
     transform: scale(0.5);
   }
 
-  .i-name > :nth-child(1),   .i-name > :nth-child(2) {
-    font-size: 2.3rem;
+  .introText {
+    font-size: 2.2rem !important;
+  }
+
+  .introName {
+    font-size: 2.3rem !important;
   }
 
   .i-name > :nth-child(1), .i-name > :nth-child(3)  {
-    color: white;
+    color: white !important;
   }
 
-  .i-name > :nth-child(3) {
-    font-size: 1.2rem;
-  }
-
-  .intro {
-    padding-bottom: -10rem;
+  .ParallaxText1 {
+    font-size: 1.2rem !important;
   }
 
   .triangleIntro {
-    bottom: 10rem;
+    bottom: 10rem !important;
   }
 }

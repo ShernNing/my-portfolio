@@ -9,6 +9,7 @@ import { themeContext } from '../../Context'
 import { Link } from 'react-scroll'
 import Triangle from '../Triangle/Triangle'
 import Github from '@iconscout/react-unicons/icons/uil-github'
+import { useInView } from 'react-intersection-observer'
 
 function Portfolio() {
   
@@ -16,16 +17,20 @@ function Portfolio() {
   
   const darkMode = theme.state.darkMode;
 
+  const { ref, inView } = useInView({
+    rootMargin: '500px 0px',
+  })
+
   return (
     <div className="container">
       <div className="portfolio" id='Portfolio'>
-        <span style={{color: darkMode? 'white' : ''}}>Recent Projects</span>
-        <span>Portfolio</span>
+        <span style={{color: darkMode? 'white' : ''}} ref={ref} className={`${inView ? 'span1' : '' }`}>Recent Projects</span>
+        <span >Portfolio</span>
 
-        <Swiper spaceBetween={550} slidesPerView={3} grabCursor={true} className='portfolio-slider'>
+        <Swiper spaceBetween={550} slidesPerView={3} grabCursor={true} className='portfolio-slider' >
           <div>
-            <a href="https://yourtube.online/" target="_blank">
-              <img src={yourtube} alt="" className='sliderImg'/>
+            <a href="https://yourtube.online/" target="_blank" >
+              <img src={yourtube} alt="" ref={ref} className={`${inView ? 'sliderImg' : '' }`}/>
             </a>
             <a href="https://yourtube.online/" target="_blank" className='desc'>
               <h3 style={{color: darkMode? 'white' : ''}}>Youtube</h3>
@@ -35,18 +40,9 @@ function Portfolio() {
               <Github/>
             </a>
           </div>
-          {/* <SwiperSlide>
-            <a href="https://yourtube.online/" target="_blank">
-              <img src={yourtube} alt="" className='sliderImg'/>
-            </a>
-            <a href="https://yourtube.online/" target="_blank" className='desc'>
-              <h3 style={{color: darkMode? 'white' : ''}}>Youtube</h3>
-              <h4 style={{color: darkMode? 'white' : ''}}>React, Javascript, CSS, HTML</h4>
-            </a>
-          </SwiperSlide> */}
           <div>
             <a href="https://shernning.pro/" target="_blank">
-              <img src={ecommerce} alt="" className='sliderImg'/>
+              <img src={ecommerce} alt="" ref={ref} className={`${inView ? 'sliderImg' : '' }`}/>
             </a>
             <a href="https://shernning.pro/" className='desc' >
               <h3 style={{color: darkMode? 'white' : ''}}>E-Commerce Store</h3>
@@ -56,15 +52,6 @@ function Portfolio() {
               <Github/>
             </a>
           </div>
-          {/* <SwiperSlide>
-            <a href="" target="_blank">
-              <img src={ecommerce} alt="" className='sliderImg'/>
-            </a>
-            <a href="" className='desc' >
-              <h3 style={{color: darkMode? 'white' : ''}}>E-Commerce Store</h3>
-              <h4 style={{color: darkMode? 'white' : ''}}>React, Javascript, CSS, HTML</h4>
-            </a>
-          </SwiperSlide> */}
         </Swiper>
         <Link spy={true} to='Contact' smooth={true} activeClass='activeClass' className='triangle' >
           <Triangle/>

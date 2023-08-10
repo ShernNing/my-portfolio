@@ -11,30 +11,92 @@ import Linkedin from '@iconscout/react-unicons/icons/uil-linkedin'
 import Github from '@iconscout/react-unicons/icons/uil-github'
 import { Link } from 'react-scroll'
 import Triangle from '../Triangle/Triangle'
+import Plx from 'react-plx'
+import { useInView } from 'react-intersection-observer'
 
 function Intro() {
   const theme = useContext(themeContext);
   
   const darkMode = theme.state.darkMode;
 
+  const { ref, inView } = useInView();
+
+  const heading1 = [
+    {
+      start: '0vh',
+      end: '50vh',
+      properties: [
+        {
+          startValue: 0,
+          endValue: 1,
+          property: "opacityFilter",
+        },
+      ],
+    },
+    {
+      start: '0vh',
+      end: '50vh',
+      properties: [
+        {
+          startValue: 0,
+          endValue: 1,
+          property: "scale",
+        },
+      ],
+    },
+  ];
+
+  const heading3 = [
+    {
+      start: '0vh',
+      end: '50vh',
+      properties: [
+        {
+          startValue: 0,
+          endValue: 1,
+          property: "opacityFilter",
+        },
+      ],
+    },
+  ];
+
+  const blur1 = [
+    {
+      start: '0vh',
+      end: '80vh',
+      properties: [
+        {
+          startValue: 0,
+          endValue: 1,
+          property: "opacityFilter",
+        },
+      ],
+    },
+  ];
+
   return (
     <div className="container">
       <div className="intro" id='Intro'>
         <div className="i-left">
           <div className="i-name">
-            <h1 style={{color: darkMode? 'white' : ''}}>Hi, I am </h1>
-            <h1>Shern Ning </h1>
-            <h1 style={{color: darkMode? 'white' : ''}}>A Frontend developer and Web Designer.
-            <br/>
-            <br/>
-            I am a highly motivated and enthusiastic Front End Developer with a strong passion for creating engaging and user-friendly web applications. 
-            <br/>
-            <br/>
-            Proficient in HTML, CSS, JavaScript, and modern front-end framework such as React. 
-            <br/>
-            <br/>
-            Eager to contribute my skills and creativity to a dynamic development team and grow as a professional in the field of web development.
-            </h1>
+            <Plx className="Parallax" parallaxData={heading1}>
+              <h1 style={{color: darkMode? 'white' : ''}}
+              className='introText'>Hi, I am </h1>
+            </Plx>
+            <h1 ref={ref} className={`${inView ? 'introName' : 'introName' }`}>Shern Ning </h1>
+            <Plx className="ParallaxText" parallaxData={heading3}>
+              <h1 style={{color: darkMode? 'white' : ''}} className='ParallaxText1'>A Frontend developer and Web Designer.
+              <br/>
+              <br/>
+              I am a highly motivated and enthusiastic Front End Developer with a strong passion for creating engaging and user-friendly web applications. 
+              <br/>
+              <br/>
+              Proficient in HTML, CSS, JavaScript, and modern front-end framework such as React. 
+              <br/>
+              <br/>
+              Eager to contribute my skills and creativity to a dynamic development team and grow as a professional in the field of web development.
+              </h1>
+            </Plx>
             <a href={Resume} download className='downloadCv'>
               <button className="button s-button">
                 Download CV
@@ -80,9 +142,11 @@ function Intro() {
             <FloatingDiv className="float3" image={uidesign} text1="UI / UX "/>
           </motion.div>
         </div>
-          {/* blur background */}
-          <div className="blur"/>
-          <div className="blur2"/>
+
+        <Plx className="Parallax" parallaxData={blur1}>
+          <div className="blur3"/>
+          <div className="blur4"/>
+        </Plx>
 
         <Link spy={true} to='Services' smooth={true} activeClass='activeClass' className='triangle triangleIntro'>
           <Triangle/>

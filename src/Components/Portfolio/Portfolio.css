@@ -33,8 +33,19 @@
   margin-top: 4rem;
 }
 
+@keyframes dropIn1 {
+  0% {
+    scale: 2;
+  }
+
+  100% {
+    scale: 1;
+  }
+}
+
 .sliderImg {
   transition: 0.6s;
+  animation: dropIn1 0.8s forwards ease-in;
 }
 
 .sliderImg:hover {

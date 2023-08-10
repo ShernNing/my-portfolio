@@ -14,6 +14,31 @@
   font-size: 3.5rem;
   animation: typing1 3s steps(28, end) forwards, blink1 0.7s infinite alternate;
   letter-spacing: .05rem;
+  z-index: 10;
+}
+
+.blur {
+  position: fixed;
+  width: 44rem;
+  height: 36rem;
+  border-radius: 50%;
+  background: var(--blue);
+  filter: blur(400px);
+  top: -25rem;
+  right: -20rem;
+  z-index: -10;
+}
+
+.blur2 {
+  position: fixed;
+  width: 42rem;
+  height: 34rem;
+  border-radius: 50%;
+  background: var(--pink);
+  filter: blur(400px);
+  top: 0rem;
+  left: -35rem;
+  z-index: -10;
 }
 
 @keyframes typing1 {
@@ -41,7 +66,7 @@
   font-size: 2.5rem;
   animation: fadeIn 1.2s ease-in 3s forwards;
   opacity: 0;
-  z-index: 1;
+  z-index: 10;
 }
 
 @keyframes fadeIn {
@@ -50,14 +75,14 @@
   }
 }
 
-.triangleNext {
-  transform: rotate(0deg) scale(0.7);
+.ParallaxTriangle  {
+  transform: rotate(0deg) scale(0.6);
   height: auto;
   opacity: 0;
   animation: fadeTriangle 1s forwards 4s;
 }
 
-.triangleNext:hover {
+.ParallaxTriangle :hover {
   opacity: 1;
 }
 
@@ -103,7 +128,7 @@
     font-size: 2.1rem !important;
   }
 
-  .triangleNext {
+  .ParallaxTriangle {
     transform: scale(0.7) ;
   }
 }
@@ -123,7 +148,31 @@
     font-size: 1.5rem !important;
   }
 
-  .triangleNext {
+  .blur {
+    position: fixed;
+    width: 24rem;
+    height: 16rem;
+    border-radius: 50%;
+    background: var(--blue);
+    filter: blur(500px) !important;
+    top: -20rem;
+    right: -10rem;
+    z-index: -10;
+  }
+  
+  .blur2 {
+    position: fixed;
+    width: 22rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: var(--pink);
+    filter: blur(500px) !important;
+    top: 0rem;
+    left: -5rem;
+    z-index: -10;
+  }
+
+  .ParallaxTriangle {
     transform: scale(0.6) ;
   }
 }
@@ -131,7 +180,7 @@
 /* xs */
 @media (max-width: 475px) {
   #heading {
-    padding: 8rem 0;
+    padding: 20rem 0 20rem 0;
   }
 
   .h-name {
@@ -143,7 +192,7 @@
     font-size: 1.2rem !important;
   }
 
-  .triangleNext {
+  .ParallaxTriangle {
     transform: scale(0.45);
   }
 }

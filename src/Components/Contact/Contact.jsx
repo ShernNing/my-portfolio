@@ -4,6 +4,7 @@ import emailjs from '@emailjs/browser';
 import { themeContext } from '../../Context';
 import Linkedin from '@iconscout/react-unicons/icons/uil-linkedin'
 import Github from '@iconscout/react-unicons/icons/uil-github'
+import Plx from 'react-plx'
 
 function Contact() {
       
@@ -27,6 +28,20 @@ function Contact() {
       });
   };
 
+  const blur4 = [
+    {
+      start: '10vh',
+      end: '200vh',
+      properties: [
+        {
+          startValue: 0,
+          endValue: 1,
+          property: "opacityFilter",
+        },
+      ],
+    },
+  ]
+
   return (
     <div className="container">
       <div className="contact-form" id='Contact'>
@@ -44,6 +59,10 @@ function Contact() {
             </div>
             <a href="mailto: sherningtan@gmail.com" className='c-email'>sherningtan@gmail.com</a>
           </div>
+        <Plx className="Parallax" parallaxData={blur4}>
+          <div className="blur7"/>
+          <div className="blur8"/>
+        </Plx>
         </div>
 
         <div className="c-right">
@@ -55,8 +74,6 @@ function Contact() {
             <span className='sentToast' style={{color: darkMode? 'white' : ''}}>{sent && "Thank you for your email!"}
             </span>
           </form>
-          <div className="blur5"/>
-          <div className="blur6"/>
         </div>
       </div>
     </div>

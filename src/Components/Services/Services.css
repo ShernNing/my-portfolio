@@ -11,14 +11,14 @@
   flex: 1;
 }
 
-.left > :nth-child(1) {
+.aboutHead {
   font-size: 3rem;
   font-weight: normal ;
   margin: 0 auto;
   z-index: 1;
 }
 
-.left > :nth-child(2) {
+.aboutHead2 {
   color: #039BE5;
   font-size: 3.5rem;
   font-weight: normal ;
@@ -26,7 +26,7 @@
   z-index: 1;
 }
 
-.left > :nth-child(3) {
+.aboutMe {
   color: var(--grey);
   max-width: 60ch;
   word-spacing: 0.25em;
@@ -63,7 +63,7 @@
 }
 
 .card1 {
-  animation: motion1 2s ease both ;
+  animation: motion1 3s ease both ;
 }
 
 @keyframes motion2 {
@@ -84,7 +84,7 @@
 }
 
 .card2 {
-  animation: motion2 2s ease both ;
+  animation: motion2 3s ease both ;
 }
 
 @keyframes motion3 {
@@ -105,31 +105,29 @@
 }
 
 .card3 {
-  animation: motion3 2s ease both ;
+  animation: motion3 3s ease both ;
 }
 
-.s-blur3 {
+.blur5 {
   background: var(--pink);
-  position: absolute;
-  width: 32rem;
-  height: 24rem;
-  right: -10rem;
-  top: 45rem;
+  position: absolute  ;
+  width: 42rem;
+  height: 34rem;
+  right: -5rem;
+  top: 15rem;
   border-radius: 50%;
-  filter: blur(300px);
-  transform: scale(1.6);
+  filter: blur(400px);
 }
 
-.s-blur4 {
+.blur6 {
   background: var(--blue);
   position: absolute;
-  width: 32rem;
-  height: 24rem;
-  left: -40rem;
-  top: 5rem;
+  width: 42rem;
+  height: 34rem;
+  left: -50rem;
+  top: 25rem;
   border-radius: 50%;
-  filter: blur(250px);
-  transform: scale(1.8);
+  filter: blur(400px);
 }
 
 /* 2xl */
@@ -489,6 +487,28 @@
   .card3 {
     animation: motion3 2s ease both ;
   }
+
+  .blur5 {
+    background: var(--pink);
+    position: absolute  ;
+    width: 32rem !important;
+    height: 24rem !important;
+    right: -5rem !important;
+    top: -10rem !important;
+    border-radius: 50%;
+    filter: blur(500px) !important;
+  }
+  
+  .blur6 {
+    background: var(--blue);
+    position: absolute;
+    width: 32rem !important;
+    height: 24rem !important;
+    left: -0rem !important;
+    top: -45rem !important;
+    border-radius: 50%;
+    filter: blur(500px) !important;
+  }
 }
 
 /* xs */
@@ -501,12 +521,12 @@
   }
 
   .left > :nth-child(1), .left > :nth-child(2) {
-    font-size: 2rem;
+    font-size: 2rem !important;
   }
 
   .aboutMe {
     margin: 1.2rem ;
-    font-size: 1rem !important;
+    font-size: 1.1rem !important;
   }
 
   @keyframes motion1 {

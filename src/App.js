@@ -5,7 +5,7 @@ import Services from "./Components/Services/Services";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import Contact from "./Components/Contact/Contact";
 import { themeContext } from "./Context";
-import { lazy, Suspense, useContext } from "react";
+import { useContext } from "react";
 import ScrollToTop from "react-scroll-to-top";
 import Heading from "./Components/Heading/Heading";
 
@@ -22,40 +22,13 @@ function App() {
 
   return (
     <div className="App" style={{background: darkMode? 'black': '', color: darkMode? 'white': ''}}>
-      {/* <Navbar/>
+      <Navbar/>
       <Heading/>
       <Intro/>
       <Services/>
       <Portfolio/>
-      <Contact/> */}
-      <Navbar/>
-      <section>
-        <Heading/>
-      </section>
-      <section>
-        <Intro/>
-      </section>
-      <section>
-        <Services/>
-      </section>
-      <section>
-        <Portfolio/>
-      </section>
-      <section>
-        <Contact/>
-      </section>
-      {/* <Suspense fallback={<div>Loading...</div>} className='sections'>
-        <IntroLazy/>
-        <ServicesLazy/>
-        <PortfolioLazy/>
-        <ContactLazy/>
-      </Suspense> */}
+      <Contact/>
       <ScrollToTop smooth className="ScrollToTop"/>
-
-
-      {/* <Experience/> */}
-      {/* <Works/> */}
-      {/* <Footer/> */}
     </div>
   );
 };

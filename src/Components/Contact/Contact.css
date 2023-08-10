@@ -12,6 +12,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1 !important;
+}
+
+.contact1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--blue);
+}
+
+.contact2 {
+  font-size: 2.7rem;
 }
 
 .left span:nth-of-type(2) {
@@ -50,6 +61,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  z-index: 1;
 }
 
 form {
@@ -86,29 +98,29 @@ textarea{
   margin-top: 1.5rem;
 } 
 
-.blur5 {
-  position: absolute;
-  width: 34rem;
-  height: 26rem;
+
+.blur7 {
+  position: fixed;
+  width: 44rem !important;
+  height: 36rem !important;
   border-radius: 50%;
   background: var(--blue);
-  filter: blur(200px);
-  z-index: -9;
-  top: 18rem;
-  transform: scale(1.6);
+  filter: blur(400px) !important;
+  top: -25rem !important;
+  right: -50rem !important;
+  z-index: -10 !important;
 }
 
-.blur6 {
-  position: absolute;
-  width: 32rem;
-  height: 24rem;
+.blur8 {
+  position: fixed;
+  width: 42rem !important;
+  height: 34rem !important;
   border-radius: 50%;
   background: var(--pink);
-  filter: blur(230px);
-  z-index: -8;
-  top: 23rem;
-  left: 13rem;
-  transform: scale(1.4);
+  filter: blur(400px) !important;
+  top: -20rem !important;
+  left: -10rem !important;
+  z-index: -10 !important;
 }
 
 
@@ -160,6 +172,30 @@ textarea{
 
   .textarea {
     height: 4rem ;
+  }
+
+  .blur7 {
+    position: fixed;
+    width: 34rem !important;
+    height: 26rem !important;
+    border-radius: 50%;
+    background: var(--pink);
+    filter: blur(650px) !important;
+    top: -25rem !important;
+    right: -10rem !important;
+    z-index: -9 !important;
+  }
+  
+  .blur8 {
+    position: fixed;
+    width: 32rem !important;
+    height: 24rem !important;
+    border-radius: 50%;
+    background: var(--blue);
+    filter: blur(650px) !important;
+    top: 0rem !important;
+    left: -10rem !important;
+    z-index: -10;
   }
 }
 
