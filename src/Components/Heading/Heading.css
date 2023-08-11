@@ -2,8 +2,8 @@
   display: grid;
   place-content: center;
   text-align: center;
-  padding: 30rem 0;
   position: relative;
+  padding: 20rem 0;
 }
 
 #heading h1 {
@@ -94,16 +94,10 @@
 
 /* xl */
 @media (max-width: 1280px) {
-  #heading {
-    padding: 25rem 0;
-  }
 }
 
 /* lg */
 @media (max-width: 1024px) {
-  #heading {
-    padding: 20rem 0;
-  }
 
   .h-name {
     font-size: 2.6rem !important;
@@ -116,9 +110,6 @@
 
 /* md */
 @media (max-width: 768px) {
-  #heading {
-    padding: 15rem 0;
-  }
 
   .h-name {
     font-size: 2.2rem !important;
@@ -135,9 +126,6 @@
 
 /* sm */
 @media (max-width: 640px) {
-  #heading {
-    padding: 10rem 0;
-  }
 
   .h-name {
     font-size: 1.6rem !important;
@@ -179,10 +167,6 @@
 
 /* xs */
 @media (max-width: 475px) {
-  #heading {
-    padding: 20rem 0 20rem 0;
-  }
-
   .h-name {
     font-size: 1.2rem !important;
     margin: 0 auto !important;
@@ -190,9 +174,5 @@
 
   .h-welcome {
     font-size: 1.2rem !important;
-  }
-
-  .ParallaxTriangle {
-    transform: scale(0.45);
   }
 }

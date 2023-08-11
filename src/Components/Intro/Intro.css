@@ -1,6 +1,6 @@
 .intro {
   display: flex;
-  padding: 20em 0 20rem 0;
+  padding: 20rem 0 10rem 0;
   position: relative;
 }
 
@@ -58,6 +58,10 @@
   letter-spacing: .05rem;
 }
 
+.introName:hover {
+  animation: typing 2s steps(11, end) forwards, blink 0.7s infinite alternate;
+}
+
 h1 {
   font-weight: 400;
   font-size: 1.5rem;
@@ -83,46 +87,8 @@ h1 {
 
 .github:hover, .linkedin:hover {
   transform: scale(2);
-  color: var(--black);
+  color: white;
 }
-
-#blue1{
-  fill: var(--blue);
-}
-
-#blue2{
-  fill: var(--lblue);
-}
-
-#pink{
-  fill: var(--pink);
-}
-
-#blue1, #blue2, #pink1 {
-  transition: all 1s ease;
-}
-
-#blue1 {
-  transform: translateX(-10%);
-}
-
-#blue2 {
-  transform: translateX(-100%);
-}
-
-svg:hover #blue1{
-  transform: translateX(10%);
-}
-
-svg:hover #pink1{
-  transform: translateX(60%);
-  opacity: 0;
-}
-
-svg:hover #blue2{
-  transform: translateX(15%);
-}
-
 
 .i-right {
   flex: 1;
@@ -135,22 +101,61 @@ svg:hover #blue2{
   font-size: 1.5rem;
 }
 
-@keyframes bounce {
-  0%, 5%, 50%, 80%, 100% {
-    transform: translateY(0);
+.floating-div1 {
+  right: 14rem;
+  animation: slideIn1 1.5s forwards;
+}
+
+@keyframes slideIn1 {
+  0% {
+    top: 2rem;
   }
 
-  40% {
-    transform: translateY(-30px);
+  80% {
+    top: 11rem;
   }
 
-  60% {
-    transform: translateY(-15px);
+  100% {
+    top: 8rem;
   }
 }
 
-.bounce:hover {
-  animation: bounce 1.2s;
+.floating-div2 {
+  top: 17rem;
+  animation: slideIn2 1.5s forwards;
+}
+
+@keyframes slideIn2 {
+  0% {
+    right: -1rem;
+  }
+
+  80% {
+    right: 6rem;
+  }
+
+  100% {
+    right: 4rem;
+  }
+}
+
+.floating-div3 {
+  right: 20rem;
+  animation: slideIn3 1.5s forwards;
+}
+
+@keyframes slideIn3 {
+  0% {
+    top: 33rem;
+  }
+
+  80% {
+    top: 23rem;
+  }
+
+  100% {
+    top: 26rem;
+  }
 }
 
 .blur3 {
@@ -177,39 +182,91 @@ svg:hover #blue2{
   z-index: -10;
 }
 
-@media screen and (max-width: 480px) {
-  .intro {
-    flex-direction: column;
-    height: 64rem;
-    gap: 7rem;
+/* 2xl */
+@media (max-width: 1536px) {
+  .floating-div1 {
+    right: 10rem;
   }
-  .i-right {
-    transform: scale(0.8);
-    left: -3rem;
+  
+  .floating-div2 {
+    top: 18rem;
   }
-  .i-right .blur {
-    display: none;
+  
+  @keyframes slideIn2 {
+    0% {
+      right: 2rem;
+    }
+  
+    80% {
+      right: 10rem;
+    }
+  
+    100% {
+      right: 9rem;
+    }
   }
-  .floating-div:nth-of-type(1) {
-    top: -7rem !important;
+  
+  .floating-div3 {
+    right: 11rem;
   }
-  .i-name > :nth-child(2) {
-    font-size: 45px;
+  
+  @keyframes slideIn3 {
+    0% {
+      top: 34rem;
+    }
+  
+    80% {
+      top: 24rem;
+    }
+  
+    100% {
+      top: 27rem;
+    }
   }
-
 }
 
-.triangle {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%) scale(0.7);
-  opacity: 0.2;
-  transition: 2s ease;
-}
+/* xl */
+@media (max-width: 1280px) {
 
-.triangle:hover {
-  opacity: 1;
+  .floating-div1 {
+    right: 6rem;
+  }
+  
+  .floating-div2 {
+    top: 18rem;
+  }
+  
+  @keyframes slideIn2 {
+    0% {
+      right: -2rem;
+    }
+  
+    80% {
+      right: 5rem;
+    }
+  
+    100% {
+      right: 5rem;
+    }
+  }
+  
+  .floating-div3 {
+    right: 7rem;
+  }
+  
+  @keyframes slideIn3 {
+    0% {
+      top: 34rem;
+    }
+  
+    80% {
+      top: 24rem;
+    }
+  
+    100% {
+      top: 27rem;
+    }
+  }
 }
 
 /* lg */
@@ -218,29 +275,73 @@ svg:hover #blue2{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-bottom: 25rem !important;
-  }
-
-  .i-right {
-    margin: 4rem 0 4rem 0;
-    left: -2rem;
+    padding-bottom: 30rem !important;
   }
 
   .i-right > * {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
-  .floating-div  {
+  .floating-div1 {
+    right: -7.5rem;
+  }
+  
+  @keyframes slideIn1 {
+    0% {
+      top: -2rem;
+    }
+  
+    80% {
+      top: 6rem;
+    }
+  
+    100% {
+      top: 4rem;
+    }
+  }
+  
+  .floating-div2 {
+    top: 12rem;
+  }
+  
+  @keyframes slideIn2 {
+    0% {
+      right: -4rem;
+    }
+  
+    80% {
+      right: -9rem;
+    }
+  
+    100% {
+      right: -7rem;
+    }
+  }
+  
+  .floating-div3 {
+    right: -7rem;
     width: max-content;
-    margin: 0 auto;
+  }
+  
+  @keyframes slideIn3 {
+    0% {
+      top: 25rem;
+    }
+  
+    80% {
+      top: 18rem;
+    }
+  
+    100% {
+      top: 20rem;
+    }
   }
 }
 
 /* md */
 @media (max-width: 768px) {
-  .i-right {
-    transform: scale(0.8);
-    left: -1rem;
+  .intro {
+    padding: 10rem 0 30rem 0 !important;
   }
 
   .i-name > :nth-child(1),   .i-name > :nth-child(2) {
@@ -255,7 +356,7 @@ svg:hover #blue2{
 /* sm */
 @media (max-width: 640px) {
   .intro {
-    padding-top: 10rem;
+    padding-bottom: 25rem !important;
   }
 
   .i-name > :nth-child(1),   .i-name > :nth-child(2) {
@@ -264,10 +365,6 @@ svg:hover #blue2{
 
   .i-name > :nth-child(1), .i-name > :nth-child(3)  {
     color: white;
-  }
-
-  .i-right {
-    transform: scale(0.65);
   }
 
   .blur3 {
@@ -293,14 +390,14 @@ svg:hover #blue2{
     right: -20rem !important;
     z-index: -10 !important;
   }
+
+  .i-right > * {
+    font-size: 1.1rem;
+  }
 }
 
 /* xs */
 @media (max-width: 475px) {
-
-  .i-right {
-    transform: scale(0.5);
-  }
 
   .introText {
     font-size: 2.2rem !important;
@@ -317,8 +414,8 @@ svg:hover #blue2{
   .ParallaxText1 {
     font-size: 1.2rem !important;
   }
-
-  .triangleIntro {
-    bottom: 10rem !important;
+  
+  .floating-div1, .floating-div2, .floating-div3 {
+    transform: scale(0.9);
   }
 }

@@ -1,12 +1,10 @@
 import React, { useContext } from 'react'
-import styles from './Services.css'
+import './Services.css'
 import ui from '../../img/ui.png'
 import illustration from '../../img/illustration.png'
 import webdevelopment from '../../img/webdevelopment.png'
 import Card from '../Card/Card'
 import { themeContext } from '../../Context'
-import { Link } from 'react-scroll'
-import Triangle from '../Triangle/Triangle'
 import { useInView } from 'react-intersection-observer'
 
 function Services() {
@@ -14,9 +12,9 @@ function Services() {
   
   const darkMode = theme.state.darkMode;
 
-  const { ref, inView } = useInView({
-    rootMargin: '500px'
-  });
+  const { ref, inView } = useInView(
+    { trackVisibility: true, delay: 100, rootMargin: '1000px', fallbackInView: true}
+  );
 
   return (
     <div className="container">
@@ -53,9 +51,6 @@ function Services() {
           <div className="blur5"></div>
           <div className="blur6"></div>
         </div>
-        <Link spy={true} to='Portfolio' smooth={true} activeClass='activeClass' className='triangle' >
-          <Triangle/>
-        </Link>
       </div>
     </div> 
   ) 

@@ -1,6 +1,6 @@
 .services {
   display: flex;
-  padding: 10em 0;
+  padding: 20em 0;
   position: relative;
 }
 
@@ -18,12 +18,43 @@
   z-index: 1;
 }
 
+.aboutHead:hover {
+  animation: shake 0.5s forwards;
+}
+
+@keyframes shake{
+  0%, 100% {
+    transform: rotate(0);
+  }
+
+  15% {
+    transform: rotate(3deg);
+  }
+
+  30% {
+    transform: rotate(-3deg);
+  }
+
+  45% {
+    transform: rotate(3deg);
+  }
+
+  70% {
+    transform: rotate(-3deg);
+  }
+}
+
 .aboutHead2 {
   color: #039BE5;
   font-size: 3.5rem;
   font-weight: normal ;
   margin-top: 1rem auto;
   z-index: 1;
+  transition: 0.5s ;
+}
+
+.aboutHead2:hover {
+  transform: scale(1.2);
 }
 
 .aboutMe {
@@ -43,6 +74,7 @@
 .card1, .card2, .card3 {
   position: absolute;
   z-index: 1;
+  padding-top: 10rem;
 }
 
 @keyframes motion1 {
@@ -103,6 +135,8 @@
     left: 10rem;
   }
 }
+
+
 
 .card3 {
   animation: motion3 3s ease both ;
@@ -202,6 +236,10 @@
 
 /* xl */
 @media (max-width: 1280px) {
+  .services {
+    padding: 30rem 0 !important;
+  }
+
   @keyframes motion1 {
     0% {
       top: -10rem;
@@ -271,7 +309,7 @@
   .services {
     margin-top: 0 auto;
     flex-direction: column;
-    padding: 6rem 0 25rem 0;
+    padding: 15rem 0  30rem 0 !important;
   }
 
   .left > :nth-child(1), .left > :nth-child(2) {
@@ -285,17 +323,17 @@
 
   @keyframes motion1 {
     0% {
-      top: 0rem;
+      top: -8rem;
       left: 0rem;
     }
   
     80% {
-      top: 0rem;
+      top: -8rem;
       left: 5rem;
     }
   
     100% {
-      top: 0rem;
+      top: -8rem;
       left: 4rem;
     }
   }
@@ -306,17 +344,17 @@
   
   @keyframes motion2 {
     0% {
-      top: 5rem;
+      top: 0rem;
       left: 17rem;
     }
   
     80% {
-      top: -1rem;
+      top: -9rem;
       left: 17rem;
     }
   
     100% {
-      top: 0rem;
+      top: -8rem;
       left: 17rem;
     }
   }
@@ -327,17 +365,17 @@
   
   @keyframes motion3 {
     0% {
-      top: 0rem;
+      top: -8rem;
       left: 33rem;
     }
   
     80% {
-      top: 0rem;
+      top: -8rem;
       left: 29rem;
     }
   
     100% {
-      top: 0rem;
+      top: -8rem;
       left: 30rem;
     }
   }
@@ -351,17 +389,17 @@
 @media (max-width: 768px) {
   @keyframes motion1 {
     0% {
-      top: 0rem;
+      top: -8rem;
       left: -2rem;
     }
   
     80% {
-      top: 0rem;
+      top: -8rem;
       left: 2rem;
     }
   
     100% {
-      top: 0rem;
+      top: -8rem;
       left: 1rem;
     }
   }
@@ -372,17 +410,17 @@
   
   @keyframes motion2 {
     0% {
-      top: 5rem;
+      top: 0rem;
       left: 13rem;
     }
   
     80% {
-      top: -1rem;
+      top: -9rem;
       left: 13rem;
     }
   
     100% {
-      top: 0rem;
+      top: -8rem;
       left: 13rem;
     }
   }
@@ -393,17 +431,17 @@
   
   @keyframes motion3 {
     0% {
-      top: 0rem;
+      top: -8rem;
       left: 28rem;
     }
   
     80% {
-      top: 0rem;
+      top: -8rem;
       left: 24rem;
     }
   
     100% {
-      top: 0rem;
+      top: -8rem;
       left: 25rem;
     }
   }
@@ -416,9 +454,7 @@
 /* sm */
 @media (max-width: 640px) {
   .services {
-    margin-top: 0 auto;
-    flex-direction: column;
-    padding: 6rem 0 25rem 0;
+    padding-bottom: 20rem !important;
   }
 
   .left > :nth-child(1), .left > :nth-child(2) {
@@ -427,17 +463,17 @@
 
   @keyframes motion1 {
     0% {
-      top: 10rem;
-      left: -1.5rem;
+      top: -8rem;
+      left: -6rem;
     }
   
     80% {
-      top: -1rem;
-      left: -1.5rem;
+      top: -8rem;
+      left: -1.3rem;
     }
   
     100% {
-      top: 0rem;
+      top: -8rem;
       left: -1.5rem;
     }
   }
@@ -448,17 +484,17 @@
   
   @keyframes motion2 {
     0% {
-      top: -1rem;
+      top: -2rem;
       left: 8rem;
     }
   
     80% {
-      top: 5rem;
+      top: -9rem;
       left: 8rem;
     }
   
     100% {
-      top: 0rem;
+      top: -8rem;
       left: 8rem;
     }
   }
@@ -469,17 +505,17 @@
   
   @keyframes motion3 {
     0% {
-      top: 10rem;
-      left: 17.5rem;
+      top: -8rem;
+      left: 21rem;
     }
   
     80% {
-      top: -1rem;
-      left: 17.5rem;
+      top: -8rem;
+      left: 17.3rem;
     }
   
     100% {
-      top: 0rem;
+      top: -8rem;
       left: 17.5rem;
     }
   }
@@ -513,11 +549,8 @@
 
 /* xs */
 @media (max-width: 475px) {
-  
   .services {
-    margin-top: 0 auto;
-    flex-direction: column;
-    padding: 6rem 0 25rem 0;
+    padding-bottom: 5 !important;
   }
 
   .left > :nth-child(1), .left > :nth-child(2) {
@@ -531,17 +564,17 @@
 
   @keyframes motion1 {
     0% {
-      top: 10rem;
-      left: -2.5rem;
+      top: -8rem;
+      left: -3.5rem;
     }
   
     80% {
-      top: -1rem;
-      left: -2.5rem;
+      top: -8rem;
+      left: -2.2rem;
     }
   
     100% {
-      top: 0rem;
+      top: -8rem;
       left: -2.5rem;
     }
   }
@@ -552,17 +585,17 @@
   
   @keyframes motion2 {
     0% {
-      top: -1rem;
+      top: -5rem;
       left: 5.5rem;
     }
   
     80% {
-      top: 5rem;
+      top: -9rem;
       left: 5.5rem;
     }
   
     100% {
-      top: 0rem;
+      top: -8rem;
       left: 5.5rem;
     }
   }
@@ -573,17 +606,17 @@
   
   @keyframes motion3 {
     0% {
-      top: 10rem;
-      left: 13.5rem;
+      top: -8rem;
+      left: 15.5rem;
     }
   
     80% {
-      top: -1rem;
-      left: 13.5rem;
+      top: -8rem;
+      left: 13.2rem;
     }
   
     100% {
-      top: 0rem;
+      top: -8rem;
       left: 13.5rem;
     }
   }

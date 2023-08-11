@@ -1,7 +1,10 @@
 .contact-form {
   display: flex;
-  padding: 30rem 0 25rem 0;
   filter: drop-shadow(-12px 15px 13px rgba(0, 0, 0, 0.25));
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20rem 0;
 }
 
 .w-left {
@@ -15,10 +18,59 @@
   z-index: 1 !important;
 }
 
+@keyframes rotate {
+  0%, 100% {
+    transform: rotate(0);
+  }
+
+  15% {
+    transform: rotate(3deg);
+  }
+
+  30% {
+    transform: rotate(-3deg);
+  }
+
+  45% {
+    transform: rotate(3deg);
+  }
+
+  70% {
+    transform: rotate(-3deg);
+  }
+}
+@keyframes rotate2 {
+  0%, 100% {
+    transform: rotate(0);
+  }
+
+  15% {
+    transform: rotate(3deg);
+  }
+
+  30% {
+    transform: rotate(-3deg);
+  }
+
+  45% {
+    transform: rotate(3deg);
+  }
+
+  70% {
+    transform: rotate(-3deg);
+  }
+}
+
 .contact1 {
   font-size: 3rem;
   margin-bottom: 1rem;
   color: var(--blue);
+  animation: rotate 1s ease-in-out 0.5s 2 forwards;
+  transition: 1s ease;
+}
+
+.contact1:hover {
+  animation: rotate2 0.5s ease-in-out forwards;
 }
 
 .contact2 {
@@ -69,7 +121,6 @@ form {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: -2.5rem;
 }
 
 .user {
@@ -98,7 +149,6 @@ textarea{
   margin-top: 1.5rem;
 } 
 
-
 .blur7 {
   position: fixed;
   width: 44rem !important;
@@ -123,14 +173,26 @@ textarea{
   z-index: -10 !important;
 }
 
+/* xl */
+@media (max-width: 1280px) {
+}
 
 /* lg */
 @media (max-width: 1024px) {
   .contact-form{
-    padding: 12rem 0;
     flex-direction: column;
-    gap: 5rem;
-    height: 40rem;
+    padding-top: 10rem !important;
+  }
+
+  .w-left {
+    height: max-content;
+    margin-bottom: 25rem;
+  }
+
+  .c-right {
+    top: 30rem !important;
+    position: absolute;
+    
   }
 
   .c-email {
@@ -153,7 +215,7 @@ textarea{
 /* sm */
 @media (max-width: 640px) {
   .contact-form {
-    padding: 5rem 0 8rem 0;
+    padding-bottom: 11rem !important;
   }
 
   .c-email {
@@ -201,9 +263,6 @@ textarea{
 
 /* xs */
 @media (max-width: 475px) {
-  .contact-form {
-    padding: 5rem 0 5rem 0;
-  }
 
   .c-email {
     font-size: 1.8rem;

@@ -5,6 +5,7 @@ import { themeContext } from '../../Context';
 import Linkedin from '@iconscout/react-unicons/icons/uil-linkedin'
 import Github from '@iconscout/react-unicons/icons/uil-github'
 import Plx from 'react-plx'
+import { useInView } from 'react-intersection-observer';
 
 function Contact() {
       
@@ -42,12 +43,16 @@ function Contact() {
     },
   ]
 
+  const {ref, inView} = useInView(
+    { trackVisibility: true, delay: 100, fallbackInView: true}
+  );
+
   return (
     <div className="container">
       <div className="contact-form" id='Contact'>
         <div className="w-left">
           <div className="left">
-            <span style={{color: darkMode? 'white' : ''}} className='contact1'>GET IN TOUCH!</span>
+            <span style={{color: darkMode? 'white' : ''}} ref={ref} className={`${inView ? 'contact1' : '' }`}>GET IN TOUCH!</span>
             <span className='contact2'>Contact me</span>
             <div className="f-icons">
               <a href="https://github.com/ShernNing" target="_blank">
