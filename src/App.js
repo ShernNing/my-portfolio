@@ -9,7 +9,7 @@ import { useContext } from "react";
 import ScrollToTop from "react-scroll-to-top";
 import Heading from "./Components/Heading/Heading";
 // import PageNotFound from "./Components/PageNotFound/PageNotFound";
-// import Joke from "./Components/Joke/Joke";
+import Joke from "./Components/Joke/Joke";
 
 // const IntroLazy = lazy(() => import('./Components/Intro/Intro'));
 // const ServicesLazy = lazy(() => import('./Components/Services/Services'));
@@ -30,7 +30,7 @@ function App() {
       <Services/>
       <Portfolio/>
       <Contact/>
-      {/* <Joke/> */}
+      <Joke/>
       {/* <PageNotFound/> */}
       <ScrollToTop smooth className="ScrollToTop"/>
     </div>
