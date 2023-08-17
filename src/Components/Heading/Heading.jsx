@@ -60,19 +60,19 @@ function Heading() {
     },
   ];
 
-  const heading3 = [
-    {
-      start: '20vh',
-      end: '40vh',
-      properties: [
-        {
-          startValue: 1,
-          endValue: 0,
-          property: 'opacityFilter',
-        },
-      ],
-    },
-  ];
+  // const heading3 = [
+  //   {
+  //     start: '20vh',
+  //     end: '40vh',
+  //     properties: [
+  //       {
+  //         startValue: 1,
+  //         endValue: 0,
+  //         property: 'opacityFilter',
+  //       },
+  //     ],
+  //   },
+  // ];
 
   const blur = [
     {

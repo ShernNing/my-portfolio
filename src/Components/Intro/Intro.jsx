@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext } from 'react'
 import './Intro.css'
 import Resume from './Shern Ning Tan CV.pdf'
 import designer from '../../img/designer.png'
@@ -106,10 +106,10 @@ function Intro() {
             <div className="i-icons">
               <div className="f-icon">
               </div>
-                <a href="https://github.com/ShernNing" target="_blank" className='github'>
+                <a href="https://github.com/ShernNing" target="_blank" className='github' rel="noreferrer">
                   <Github/>
                 </a>
-                <a href="https://www.linkedin.com/in/shern-ning-tan-942527106/" target="_blank" className='linkedin'>
+                <a href="https://www.linkedin.com/in/shern-ning-tan-942527106/" target="_blank" className='linkedin' rel="noreferrer">
                   <Linkedin/>
                 </a>
             </div>

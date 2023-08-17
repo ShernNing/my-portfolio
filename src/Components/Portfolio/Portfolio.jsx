@@ -27,26 +27,26 @@ function Portfolio() {
 
         <Swiper spaceBetween={550} slidesPerView={3} grabCursor={true} className='portfolio-slider' >
           <div>
-            <a href="https://yourtube.online/" target="_blank" >
+            <a href="https://yourtube.online/" target="_blank" rel="noreferrer">
               <img src={yourtube} alt="" ref={ref} className={`${inView ? 'sliderImg' : '' }`}/>
             </a>
-            <a href="https://yourtube.online/" target="_blank" className='desc'>
+            <a href="https://yourtube.online/" target="_blank" className='desc' rel="noreferrer">
               <h3 style={{color: darkMode? 'white' : ''}}>Youtube</h3>
               <h4 style={{color: darkMode? 'white' : ''}}>React, Javascript, CSS, HTML, Git</h4>
             </a>
-            <a href="https://github.com/ShernNing/youtube.git" target="_blank" className='githubPortfolio' style={{color: darkMode? 'white' : ''}}>
+            <a href="https://github.com/ShernNing/youtube.git" target="_blank" className='githubPortfolio' style={{color: darkMode? 'white' : ''}} rel="noreferrer">
               <Github/>
             </a>
           </div>
           <div>
-            <a href="https://shernning.pro/" target="_blank" ref={ref}>
+            <a href="https://shernning.pro/" target="_blank" ref={ref} rel="noreferrer">
               <img src={ecommerce} alt=""  className={`${inView ? 'sliderImg' : '' }`}/>
             </a>
             <a href="https://shernning.pro/" className='desc' >
               <h3 style={{color: darkMode? 'white' : ''}}>E-Commerce Store</h3>
               <h4 style={{color: darkMode? 'white' : ''}}>React, Javascript, CSS, HTML, Git</h4>
             </a>
-            <a href="https://github.com/ShernNing/ecommerce.git" target="_blank" className='githubPortfolio' style={{color: darkMode? 'white' : ''}}>
+            <a href="https://github.com/ShernNing/ecommerce.git" target="_blank" className='githubPortfolio' style={{color: darkMode? 'white' : ''}} rel="noreferrer">
               <Github/>
             </a>
           </div>

@@ -56,10 +56,10 @@ function Contact() {
             <span style={{color: darkMode? 'white' : ''}}  className={`${inView ? 'contact1' : '' }`}>GET IN TOUCH!</span>
             <span className={`${inView ? 'contact2' : '' }`}>Contact me</span>
             <div className="f-icons">
-              <a href="https://github.com/ShernNing" target="_blank">
+              <a  href="https://github.com/ShernNing" target="_blank" rel="noreferrer">
                 <Github/>
               </a>
-              <a href="https://www.linkedin.com/in/shern-ning-tan-942527106/" target="_blank">
+              <a href="https://www.linkedin.com/in/shern-ning-tan-942527106/" target="_blank" rel="noreferrer">
                 <Linkedin/>
               </a>
             </div>
