@@ -104,6 +104,7 @@ h1 {
 .floating-div1 {
   right: 14rem;
   animation: slideIn1 1.5s forwards;
+  transition: 1s ease forwards;
 }
 
 @keyframes slideIn1 {

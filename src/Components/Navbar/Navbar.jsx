@@ -22,12 +22,12 @@ function Navbar() {
               <Link spy={true} to='Services' smooth={true} activeClass='activeClass' className='bounce1'>
                 <li>About</li>
               </Link>
-              {/* <Link spy={true} to='Experience' smooth={true} activeClass='activeClass' className='bounce1'>
-                <li>Experience</li>
-              </Link> */}
               <Link spy={true} to='Portfolio' smooth={true} activeClass='activeClass' className='bounce1'>
                 <li>Portfolio</li>
               </Link>
+              {/* <Link spy={true} to='Experience' smooth={true} activeClass='activeClass' className='bounce1'>
+                <li>Experience</li>
+              </Link> */}
               {/* <Link spy={true} to='Testimonials' smooth={true} activeClass='activeClass' className='bounce1'>
                 <li>Testimonials</li>
               </Link> */}
